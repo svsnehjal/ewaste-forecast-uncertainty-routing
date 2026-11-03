@@ -1,0 +1,26 @@
+best fixed on train: Fixed-rate-tuned(1.0) {'Fixed-6d-halves-nominal0.6B': np.float64(5933.695161253867), 'Fixed-6d-halves': np.float64(5753.803615729322), 'Fixed-3d-all': np.float64(7820.60559531304), 'Fixed-6d-all': np.float64(5575.886024564005), 'Fixed-9d-thirds': np.float64(5250.97322506812), 'Fixed-9d-all': np.float64(5643.37127576392), 'Fixed-rate-tuned(0.6)': np.float64(5881.7305756956985), 'Fixed-rate-tuned(0.8)': np.float64(5250.713168423917), 'Fixed-rate-tuned(1.0)': np.float64(4889.746538836002)}
+sigma 0 done 16
+sigma 0.1 done 35
+sigma 0.2 done 60
+sigma 0.3 done 81
+sigma 0.4 done 105
+sigma 0.5 done 125
+sigma 0.6 done 149
+sigma 0.75 done 181
+sigma 1.0 done 202
+STAGE main done in 202 s
+iid 8
+bias_under 15
+bias_over 24
+bias_point 31
+ar1 39
+xcorr 46
+t 54
+STAGE errmodels done in 54 s
+STAGE sigmahat done in 38 s
+STAGE pareto done in 64 s
+ablation Q 200.0
+ablation Q 250.0
+ablation Q 300.0
+ablation Q 400.0
+STAGE ablation done in 78 s

@@ -1,0 +1,14 @@
+{
+  "sources": {
+    "CPCB_Tamil_Nadu_inventory": "CPCB report filed in NGT proceedings; Tamil Nadu estimated generation: 448,878 MT (FY2023-24), 466,578 MT (FY2024-25). https://www.greentribunal.gov.in/sites/default/files/news_updates/Report%20on%20behalf%20of%20CPCB%20in%20EA%20NO%2004%20of%202024%20IN%20OA%20No.%20512%20of%202018%20%28Shailesh%20Singh%20Vs.%20State%20of%20U.P.%20%26%20Ors.%29.pdf",
+    "TNPCB_annual_report_2023_24": "TNPCB Annual Report 2023-24; annual returns submitted by industries; quantities collected/processed and materials recovered. https://tnpcb.gov.in/PDF/Information/annualreports/English/AnnualRpt_Eng2024.pdf",
+    "MoEFCC_PIB_24_July_2025": "MoEFCC parliamentary reply, 24 July 2025; registered recycler processing quantity for Tamil Nadu. https://www.pib.gov.in/PressReleasePage.aspx?PRID=2147876&lang=2&reg=48"
+  },
+  "method": "Statewide annual estimate multiplied by explicit illustrative network-share assumptions.",
+  "caveat": "No daily or location-level public data were available in these sources. The resulting network demand scenarios are synthetic and should not be described as measured local collection data.",
+  "shares_tested": [
+    1e-06,
+    1e-05,
+    0.0001
+  ]
+}

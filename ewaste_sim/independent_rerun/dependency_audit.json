@@ -1,0 +1,10 @@
+{
+  "numpy": true,
+  "scipy": true,
+  "pandas": true,
+  "sklearn": true,
+  "xgboost": true,
+  "matplotlib": true,
+  "pyvrp": false,
+  "ortools": false
+}

@@ -1,0 +1,58 @@
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+best fixed on train: Fixed-rate-tuned(1.0) {'Fixed-6d-halves-nominal0.6B': np.float64(5933.695161253867), 'Fixed-6d-halves': np.float64(5753.803615729322), 'Fixed-3d-all': np.float64(7820.60559531304), 'Fixed-6d-all': np.float64(5575.886024564005), 'Fixed-9d-thirds': np.float64(5250.97322506812), 'Fixed-9d-all': np.float64(5643.37127576392), 'Fixed-rate-tuned(0.6)': np.float64(5881.7305756956985), 'Fixed-rate-tuned(0.8)': np.float64(5250.713168423917), 'Fixed-rate-tuned(1.0)': np.float64(4889.746538836002)}
+sigma 0 done 28
+sigma 0.1 done 48
+sigma 0.2 done 69
+sigma 0.3 done 90
+sigma 0.4 done 108
+sigma 0.5 done 134
+sigma 0.6 done 157
+sigma 0.75 done 175
+sigma 1.0 done 194
+STAGE main done in 194 s
+iid 7
+bias_under 14
+bias_over 21
+bias_point 28
+ar1 34
+xcorr 41
+t 48
+STAGE errmodels done in 48 s
+STAGE sigmahat done in 35 s
+STAGE heterogeneity done in 7 s
+scale 50 4
+scale 100 8
+scale 200 16
+STAGE scale done in 28 s
+ablation Q 200.0
+ablation Q 250.0
+ablation Q 300.0
+ablation Q 400.0
+STAGE ablation done in 63 s
+STAGE pareto done in 45 s
+solver 30 cw2opt Naive 0
+solver 30 cw2opt Buffered 0
+Traceback (most recent call last):
+  File [35m"/mnt/data/ewaste_frozen_reproduction/ewaste_sim/experiments.py"[0m, line [35m183[0m, in [35m<module>[0m
+    t0 = time.time(); [31mglobals()['stage_' + st][0m[1;31m()[0m; print('STAGE', st, 'done in', round(time.time() - t0), 's', flush=True)
+                      [31m~~~~~~~~~~~~~~~~~~~~~~~~[0m[1;31m^^[0m
+  File [35m"/mnt/data/ewaste_frozen_reproduction/ewaste_sim/experiments.py"[0m, line [35m149[0m, in [35mstage_solvers[0m
+    inst = Instance(s, P); pol = ForecastPolicy(th, a, k, err=er); M = [31mrun[0m[1;31m(inst, pol, P, solver=solver, ctx_extra=dict(tl=tl))[0m
+                                                                       [31m~~~[0m[1;31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  File [35m"/mnt/data/ewaste_frozen_reproduction/ewaste_sim/sim.py"[0m, line [35m359[0m, in [35mrun[0m
+    routes, ndrop = [31msolve_routes[0m[1;31m(sel, l, P, inst, solver, ctx)[0m
+                    [31m~~~~~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  File [35m"/mnt/data/ewaste_frozen_reproduction/ewaste_sim/sim.py"[0m, line [35m143[0m, in [35msolve_routes[0m
+    routes = pyvrp_solve(sel, l, Qmax, K, inst, ctx)
+  File [35m"/mnt/data/ewaste_frozen_reproduction/ewaste_sim/sim.py"[0m, line [35m172[0m, in [35mpyvrp_solve[0m
+    from pyvrp import Model
+[1;35mModuleNotFoundError[0m: [35mNo module named 'pyvrp'[0m

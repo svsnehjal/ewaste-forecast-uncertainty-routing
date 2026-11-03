@@ -1,0 +1,2 @@
+scenario,source_statewide_generation_MT_FY2023_24,assumed_network_share,network_annual_kg,network_daily_kg_target,N,B_kg,K,vehicle_capacity_kg_each,median_point_rate_kg_day,lognormal_sigma,warmup_days,measurement_days,cycle_days,test_seeds,forecast_error_sigmas,tuning
+CPCB-share-1e-4,448878.0,0.0001,44887.8,122.98027397260275,30,45.220712858261194,4,135.66213857478357,3.6176570286608953,0.5,30,120,3,1000-1029,"0.0,0.3,0.5,1.0",No tuning in this fixed-parameter calibrated comparison

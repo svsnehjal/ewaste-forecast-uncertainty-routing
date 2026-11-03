@@ -1,0 +1,10 @@
+policy,trainJ,best
+Fixed-6d-halves-nominal0.6B,5933.695161253867,False
+Fixed-6d-halves,5753.803615729322,False
+Fixed-3d-all,7820.60559531304,False
+Fixed-6d-all,5575.886024564005,False
+Fixed-9d-thirds,5250.97322506812,False
+Fixed-9d-all,5643.37127576392,False
+Fixed-rate-tuned(0.6),5881.7305756956985,False
+Fixed-rate-tuned(0.8),5250.713168423917,False
+Fixed-rate-tuned(1.0),4889.746538836002,True

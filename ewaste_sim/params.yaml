@@ -1,0 +1,10 @@
+# Calibrated physical-unit configuration used by sim.py (mass values in kg).
+calibration: {source: CPCB Tamil Nadu FY2023-24 inventory estimate, statewide_generation_MT: 448878, assumed_network_share: 0.0001, network_annual_kg: 44887.8, network_daily_kg_target: 122.9802739726, note: "Network share is an explicit scenario assumption, not measured local data."}
+network: {N: 30, area_km: 20, depot: centre, detour: 1.3}
+demand: {median_rate_kg_per_day: 3.61765702866, sigma_ln: 0.5, gamma_shape: 4, weekly_amplitude: 0.3, bin_capacity_kg: 45.2207128583}
+fleet: {K: 4, vehicle_capacity_kg_each: 135.6621385748, cycle_days: 3}
+timeline: {warmup_days: 30, horizon_days: 120, initial_stock: "U(0, 0.5*B) kg per point"}
+cost: {per_km: 0.9, per_stop: 2.0, tuning_penalty_per_lost_kg: 0.5}
+policy_defaults: {theta: 0.85, buffered: {a: 0.3, k: 0.8}}
+seeds: {calibrated_test: "1000-1029 (30 independent test instances)"}
+sigma_grid_calibrated_main: [0, 0.3, 0.5, 1.0]

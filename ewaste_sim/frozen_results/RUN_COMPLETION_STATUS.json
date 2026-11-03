@@ -1,0 +1,28 @@
+{
+  "completed": [
+    "main",
+    "errmodels",
+    "sigmahat",
+    "heterogeneity",
+    "scale",
+    "ablation",
+    "pareto",
+    "analysis_tables_figures",
+    "cw2opt_solver_subset"
+  ],
+  "not_completed": [
+    "pyvrp_solver",
+    "ortools_solver",
+    "full_forecaster_retraining_under_frozen_config"
+  ],
+  "configuration": "params.yaml in project root",
+  "seed_protocol": {
+    "mechanism_train_selection": "0-29",
+    "mechanism_test": "1000-1029"
+  },
+  "note": "CPCB network share 0.0001 is assumed, not measured.",
+  "manuscript_limitations_explicit": true,
+  "calibration_note": "CPCB 448,878 MT/year is only a scale anchor; network share 0.0001 is assumed, not measured.",
+  "solver_note": "PyVRP and OR-Tools comparisons not completed; only in-house CW2OPT subset reported.",
+  "forecaster_note": "MA/RF/XGBoost/LSTM not retrained under same frozen configuration; keep prior forecast experiment separate."
+}

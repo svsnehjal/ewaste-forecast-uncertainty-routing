@@ -1,0 +1,9 @@
+source_dataset,financial_year,indicator,value,unit,interpretation
+CPCB_Tamil_Nadu_inventory,FY2023-24,estimated_generation,448878.0,MT/year,Statewide inventory estimate; not network-level collection data
+CPCB_Tamil_Nadu_inventory,FY2024-25,estimated_generation,466578.0,MT/year,Statewide inventory estimate; not network-level collection data
+TNPCB_Annual_Report_2023_24,FY2023-24,collected_processed:IT_and_telecommunication,20111.0,tonnes,Industry annual returns; do not interpret as total generation
+TNPCB_Annual_Report_2023_24,FY2023-24,collected_processed:consumer_electrical_electronics,9897.0,tonnes,Industry annual returns; do not interpret as total generation
+TNPCB_Annual_Report_2023_24,FY2023-24,collected_processed:other_telecom_items_and_packaging,2361.0,tonnes,Industry annual returns; do not interpret as total generation
+TNPCB_Annual_Report_2023_24,FY2023-24,materials_recovered:materials_recovered,24911.0,tonnes,Industry annual returns; do not interpret as total generation
+MoEFCC_PIB_registered_recyclers,FY2023-24,registered_recycler_processed,23203.636,MT,Registered recycler processing quantity; separate reporting measure
+MoEFCC_PIB_registered_recyclers,FY2024-25,registered_recycler_processed,16360.815,MT,Registered recycler processing quantity; separate reporting measure
